@@ -2,7 +2,7 @@
 import { useEffect, useLayoutEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { useAppDispatch } from '@/redux/store/hook'
-import { showMarketSideBar } from '@/redux/reducers/sidebar'
+import { showMainSideBar, showMarketSideBar } from '@/redux/reducers/sidebar'
 import SpaceMan from './SpaceMan'
 import Title from '../Title'
 import Chart from './Chart'
@@ -25,17 +25,19 @@ export default function Base() {
   const dispatch = useAppDispatch()
 
   useLayoutEffect(() => {
-    dispatch(showMarketSideBar())
+    dispatch(showMainSideBar())
   }, [])
   return (
     <div className="">
-      <Title title='Token' height='50px' parentPadding='10px' marginBottom='10px'/>
+      <Title title='Token' height='50px' parentPadding='10px' marginBottom='10px' />
       <SpaceMan />
-      <Title title='Charts' height='50px' parentPadding='10px' marginBottom='10px'/>
-      <Chart />
-      <Links data={['Details', 'Threads', 'Transactions', 'Holders']} fontSize='13px' noRadius={true}/>
-      <div className="">
-        <Details />
+      <Title title='Charts' height='50px' parentPadding='10px' marginBottom='10px' />
+      <div className="rounded-2xl rounded-b-none relative bg-[#272727] p-3">
+        <Chart />
+        <Links data={['Details', 'Threads', 'Transactions', 'Holders']} fontSize='13px' noRadius={true} />
+        <div className="">
+          <Details />
+        </div>
       </div>
     </div>
   )
