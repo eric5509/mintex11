@@ -29,9 +29,9 @@ export default function Base() {
   }, [])
   return (
     <div className="">
-      <Title title='Token' height='50px' parentPadding='10px' marginBottom='10px' />
+      <Title paddingLeft='5px' title='Token' height='50px' parentPadding='10px' marginBottom='10px' />
       <SpaceMan />
-      <Title title='Charts' height='50px' parentPadding='10px' marginBottom='10px' />
+      <Title paddingLeft='5px' title='Charts' height='50px' parentPadding='10px' marginBottom='10px' />
       <div className="rounded-2xl rounded-b-none relative bg-[#272727] p-3">
         <Chart />
         <Links data={['Details', 'Threads', 'Transactions', 'Holders']} fontSize='13px' noRadius={true} />

@@ -16,12 +16,12 @@ export default function RightSidebarContent() {
             {type === "main" &&
                 <div className='border-2 min-h-full border-[#862078] rounded-2xl'>
                     <div className="p-2">
-                        <Title title="King of Coin" height="50px" fontSize="18px" paddingLeft="10px" />
+                        <Title title="King of Coin" height="50px" fontSize="18px" paddingLeft="5px" />
                     </div>
                     <div className={`p-3 ${darkmode ? "bg-[#272727]" : 'bg-white'} h-fit duration-500 transition-colors rounded-2xl mt-3`}>
                         <KingOfCoin />
                         <div className=" mb-4 mt-3 flex justify-between">
-                            <Title title="Updates" paddingLeft="3px" height="50px" />
+                            <Title title="Updates" paddingLeft="5px" height="50px" />
                             <Links paddingInline="12px" data={['All', 'Creation', 'Transaction']} fontSize="11px" />
                         </div>
                         <DisplayActionCards />
