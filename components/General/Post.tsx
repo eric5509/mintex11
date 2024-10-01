@@ -10,7 +10,7 @@ export default function Post() {
         <div className="flex justify-between items-center">
           <p className="flex gap-1 text-13 items-center">
             <b>$Space</b>
-            <span className="text-[#ECEDEE] ml-1">created by</span>
+            <span className="text-[#ECEDEE] text-nowrap ml-1">created by</span>
             <BsDot />
             <b>UGnxf</b>
           </p>
