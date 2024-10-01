@@ -6,7 +6,7 @@ export default function PostCard() {
   const darkmode = useAppSelector(store => store.darkmode.value)
   return (
     <div className={`flex shadow-md border-[#8996A9] border-2 duration-500 transition-colors p-3 rounded-xl gap-4 ${darkmode ? "bg-[#272727]" : "bg-white"}`}>
-      <Image height={0} width={0} src="loggg.png" className="h-[48px] w-[48px]" alt="" />
+      <Image height={48} loading="lazy" width={48} src="loggg.png" className="" alt="" />
       <div className={`flex text-white flex-col gap-1`}>
         <div className="flex justify-between items-center">
           <p className="flex gap-1 text-13 items-center">
@@ -22,9 +22,9 @@ export default function PostCard() {
           <b className={`${darkmode ? "text-white": "text-secondary"} duration-500 transition-colors`}> Space Man (#Space)</b> is a cryptocurrency project
           based on inspirations from a man who visited.....
         </p>
-        <Image height={0} width={0}
+        <Image height={240} width={280} loading="lazy"
           src="https://s3-alpha-sig.figma.com/img/6d55/68bc/f7d3551f8ee13233dd7014af1b9544d7?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E8Sr7ssM95SuZ6ZtMZm3pBS9hrPuvbijQGylANRhyvNOgSU1fflUAx2sbxpiZFnrTaCu72WzG37MqnWw7bstvaHWVZ1PyNBhr5dPSx7yL-439bLUT2EGMhSSpT-Z2ikQcO4iHws50I3UOloKiGa4bMHWVDwUlWqCqfL2cWaNqG3gxqGNGphEBL17gTe6fzjsAQ~4cyIf8Z-6mBN3J109tp39zrxHj98tprCjy-KZaCS0h7KD9OJZsg1HL7xDsAe31~VZ-93VtWXNhZM~k2stqs2f6LBeD4VKtQKoWzIWTNcrzx0UcyAgbeEltDP0k4oEpcFBRT8yiye8RjSkZerUVQ__"
-          className="w-[280px] object-cover rounded-xl h-[240px]"
+          className="object-cover rounded-xl "
           alt=""
         />
         <div className="mt-2 text-xs flex gap-4 items-center">
