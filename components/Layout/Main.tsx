@@ -13,7 +13,7 @@ export default function Main({ children }: Props) {
     const type = useAppSelector(store => store.sidebar.type)
     return (
         <div className="h-[calc(100vh-80px)] overflow-y-auto p-3">
-            <div className={`h-full overflow-y-auto grid ${type !== "" ? "grid-cols-[310px_1fr_346px] " : "grid-cols-[310px_1fr] "} gap-3`}>
+            <div className={`h-full overflow-y-auto grid ${type !== "" ? "grid-cols-[1fr] xl:grid-cols-[310px_1fr_346px] " : "grid-cols-1 xl:grid-cols-[310px_1fr] "} gap-3`}>
                 <LeftSidebar />
                 <Body children={children} />
                 <RightSidebar />

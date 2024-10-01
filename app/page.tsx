@@ -1,4 +1,4 @@
-import Base from "@/components/ScreenA/Base";
+import Base from "@/components/Home/Base";
 
 export default function page() {
   return (

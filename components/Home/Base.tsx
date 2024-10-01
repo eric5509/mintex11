@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import DisplayPostCards from "@/components/ScreenA/DisplayPostCards";
+import DisplayPostCards from "@/components/Home/DisplayPostCards";
 import Links from "@/components/General/Links";
 import Title from "@/components/General/Title";
 import { showMainSideBar } from "@/redux/reducers/sidebar";
