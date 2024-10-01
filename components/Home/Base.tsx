@@ -18,7 +18,7 @@ export default function Base() {
   }, [dispatch])
 
   return (
-    <motion.div variants={variant} animate="animate" initial='initial' className=" h-full gap-3 ">
+    <motion.div variants={variant} animate="animate" initial='initial' className="h-full gap-3 ">
       <div className="h-full overflow-y-auto">
         <div className={`border-2 rounded-2xl min-h-full ${darkmode ? "border-[#862078]" : ""}`}>
           <div className="p-2 flex flex-col gap-2 md:gap-0 md:flex-row mb-4">

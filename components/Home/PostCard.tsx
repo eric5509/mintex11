@@ -11,7 +11,7 @@ export default function PostCard() {
         <div className="flex justify-between items-center">
           <p className="flex gap-1 text-13 items-center">
             <b className={`${darkmode ? "text-white": "text-secondary"} duration-500 transition-colors`}>$Space</b>
-            <span  className={`text-xs ${darkmode ? "text-[#ECEDEE] " : "text-secondary"} ml-1 duration-500 transition-colors`}>created by</span>
+            <span  className={`text-xs text-nowrap ${darkmode ? "text-[#ECEDEE] " : "text-secondary"} ml-1 duration-500 transition-colors`}>created by</span>
             <BsDot />
             <b className={`${darkmode ? "text-white": "text-secondary"} duration-500 transition-colors`}>UGnxf</b>
           </p>
