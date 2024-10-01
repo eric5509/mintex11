@@ -8,11 +8,7 @@ body {
 
 }
 
-.borderr{
-  border-radius: 16px;
-  border-image-source: linear-gradient(83.19deg, #99339C 25.82%, #160C15 58.37%, #863E93 92.58%);
-  border: 2px solid;
-}
+
 
 
 ::-webkit-scrollbar {
@@ -27,12 +23,3 @@ body {
   }
 }
 
-.Border {
-  border: 1.5px solid;
-  border-image-source: linear-gradient(
-    83.19deg,
-    #99339c 25.82%,
-    #160c15 58.37%,
-    #863e93 92.58%
-  );
-}

@@ -1,8 +1,13 @@
 'use client'
 
+import { openBackdrop } from "@/redux/reducers/backdrop"
 import { toggleDarkmode } from "@/redux/reducers/darkmode"
 import { useAppDispatch, useAppSelector } from "@/redux/store/hook"
 import Link from "next/link"
+import Backdrop from "../Backdrop1/Backdrop1"
+import Backdrop1 from "../Backdrop1/Backdrop1"
+import Backdrop2 from "../Backdrop2/Backdrop2"
+import Backdrop3 from "../Backdrop3/Backdrop3"
 
 export default function Topnav() {
     const darkmode = useAppSelector(store => store.darkmode.value)
@@ -37,10 +42,13 @@ export default function Topnav() {
                     <img src="gem.png" alt="" />
                     <p className="font-bold">0.0200</p>
                 </div>
-                <div className="transition-none">
+                <div onClick={() => dispatch(openBackdrop(1))} className="transition-none">
                     <p className="px-10 py-3 rounded-lg cursor-pointer border-2 hover:scale-105 duration-300 active:scale-100 border-[#9DFBFA] font-semibold">Create Token</p>
                 </div>
             </div>
+            <Backdrop1 />
+            <Backdrop2 />
+            <Backdrop3 />
         </div>
     )
 }

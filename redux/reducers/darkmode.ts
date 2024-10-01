@@ -6,7 +6,7 @@ const initialState = {
 }
 
 
-export const DarkmodeReducer = createSlice({
+export const DarkmodeSlice = createSlice({
     name: 'darkmode',
     initialState,
     reducers: ({
@@ -17,4 +17,4 @@ export const DarkmodeReducer = createSlice({
     })
 })
 
-export const { toggleDarkmode } = DarkmodeReducer.actions
+export const { toggleDarkmode } = DarkmodeSlice.actions

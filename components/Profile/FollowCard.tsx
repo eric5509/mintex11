@@ -11,7 +11,7 @@ export default function FollowCard() {
             <div className={` p-5 rounded-3xl border-2 border-[#8996A9] ${darkmode ? "bg-[#323434]" : "bg-gray-50"}`}>
                 <div className="flex justify-between items-center">
                     <div className="flex gap-3 items-center">
-                        <Image src="logoo.png" className='w-[72px] h-[72px]' alt="" />
+                        <Image src="/logoo.png" className='w-[72px] h-[72px]' alt="" />
                         <div className="flex gap-3 items-center">
                             <p className="font-semibold text-prim ml-2 mr-1">UGnxf</p>
                             <div className="flex items-center gap-2 py-1 px-2 bg-[#9DFBFA0F] rounded-full">

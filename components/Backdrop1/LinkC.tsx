@@ -1,11 +1,15 @@
+'use client'
+import { closeBackdrop } from '@/redux/reducers/backdrop'
+import { useAppDispatch } from '@/redux/store/hook'
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 
 export default function LinkC() {
+    const dispatch = useAppDispatch()
     return (
         <div className='h-full w-full flex flex-col justify-between'>
             <div className="h-7 float-right cursor-pointer w-7 grid place-content-center place-self-end rounded-full bg-[#475861]">
-                <FaTimes className="text-[#9DFBFA]" />
+                <FaTimes onClick={() => dispatch(closeBackdrop())} className="text-[#9DFBFA]" />
             </div>
             <div className="flex justify-center items-center flex-col">
 

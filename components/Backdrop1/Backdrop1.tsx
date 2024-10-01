@@ -2,7 +2,7 @@ import LinkA from "./LinkA"
 import LinkB from "./LinkB"
 import LinkC from "./LinkC"
 
-export default function Backdrop() {
+export default function Backdrop1() {
     
     const links1 = [
         ['Rainbow', 'rainbow.png'],
