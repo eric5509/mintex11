@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { BsDot } from 'react-icons/bs'
 
 export default function SpaceMan() {
@@ -5,7 +6,7 @@ export default function SpaceMan() {
         <div className="bg-[#272727] rounded-2xl p-4">
             <div className='flex text-white bg-[#323434] border-2 border-[#8996A9] rounded-2xl justify-evenly items-center gap-5 p-4'>
                 <div className="">
-                    <img src="imgg.png" alt="" />
+                    <Image height={0} width={0} className='w-[78px] h-[67px]' src="imgg.png" alt="" />
                 </div>
                 <p className='font-semibold text-15'>Space Man (#Space)</p>
                 <p className='text-prim'>Market Cap - 11.5k</p>
