@@ -1,11 +1,12 @@
 'use client'
 import { useAppSelector } from "@/redux/store/hook";
+import Image from "next/image";
 import { BsChat, BsDot, BsHeart, BsMessenger, BsStar } from "react-icons/bs";
 export default function PostCard() {
   const darkmode = useAppSelector(store => store.darkmode.value)
   return (
     <div className={`flex shadow-md border-[#8996A9] border-2 duration-500 transition-colors p-3 rounded-xl gap-4 ${darkmode ? "bg-[#272727]" : "bg-white"}`}>
-      <img src="Medium.png" className="h-[42px] w-[42px]" alt="" />
+      <Image height={0} width={0} src="Medium.png" className="h-[42px] w-[42px]" alt="" />
       <div className={`flex text-white flex-col gap-1`}>
         <div className="flex justify-between items-center">
           <p className="flex gap-1 text-13 items-center">
