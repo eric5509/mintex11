@@ -22,7 +22,7 @@ export default function PostCard() {
           <b className={`${darkmode ? "text-white": "text-secondary"} duration-500 transition-colors`}> Space Man (#Space)</b> is a cryptocurrency project
           based on inspirations from a man who visited.....
         </p>
-        <img
+        <Image height={0} width={0}
           src="https://s3-alpha-sig.figma.com/img/6d55/68bc/f7d3551f8ee13233dd7014af1b9544d7?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E8Sr7ssM95SuZ6ZtMZm3pBS9hrPuvbijQGylANRhyvNOgSU1fflUAx2sbxpiZFnrTaCu72WzG37MqnWw7bstvaHWVZ1PyNBhr5dPSx7yL-439bLUT2EGMhSSpT-Z2ikQcO4iHws50I3UOloKiGa4bMHWVDwUlWqCqfL2cWaNqG3gxqGNGphEBL17gTe6fzjsAQ~4cyIf8Z-6mBN3J109tp39zrxHj98tprCjy-KZaCS0h7KD9OJZsg1HL7xDsAe31~VZ-93VtWXNhZM~k2stqs2f6LBeD4VKtQKoWzIWTNcrzx0UcyAgbeEltDP0k4oEpcFBRT8yiye8RjSkZerUVQ__"
           className="w-[280px] object-cover rounded-xl h-[240px]"
           alt=""
