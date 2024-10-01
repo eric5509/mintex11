@@ -1,9 +1,11 @@
+'use client'
+import { useAppSelector } from "@/redux/store/hook"
 import LinkA from "./LinkA"
 import LinkB from "./LinkB"
 import LinkC from "./LinkC"
 
 export default function Backdrop1() {
-    
+
     const links1 = [
         ['Rainbow', 'rainbow.png'],
         ['Coinbase Wallet', 'coinbase.png'],
@@ -17,8 +19,9 @@ export default function Backdrop1() {
         ['imWallet', 'imwallet.png'],
         ['Steakwallet', 'steak.png'],
     ]
+    const backdrop = useAppSelector(store => store.backdrop.value)
     return (
-        <div className="h-[calc(100vh-80px)] w-screen fixed top-20 grid place-content-center left-0 bg-black/10 backdrop-blur-sm z-[5000]">
+        <div className={`h-[calc(100vh-80px)] ${backdrop != 1 && 'opacity-0 invisible'} duration-300 w-screen fixed top-20 grid place-content-center left-0 bg-black/10 backdrop-blur-sm z-[5000] `}>
             <div className="w-[850px] h-[575px] overflow-hidden bg-[#2D383E] rounded-2xl shadow-lg grid grid-cols-[300px_1fr] shadow-gray-700">
                 <div className=" border-r-2 p-4">
                     <div className="flex justify-between">
