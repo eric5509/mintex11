@@ -14,7 +14,7 @@ export default function LeftSidebar() {
     ['Earn', 'gem1.png', '/earn', 'greengem.png'],
   ]
   return (
-    <div className={`border-2 border-[#862078] flex-col hidden xl:flex justify-between ${darkmode ? "bg-[#210716]": ""} duration-500 transition-colors h-full p-3 rounded-2xl`}>
+    <div className={`border-2 border-[#862078] flex-col hidden lg:flex justify-between ${darkmode ? "bg-[#210716]": ""} duration-500 transition-colors h-full p-3 rounded-2xl`}>
       <div className="flex flex-col gap-3">
         {links.map((el, key) => (
           <Link key={key} href={`${el[2]}`} className={`flex items-center border-2 cursor-pointer border-transparent hover:border-prim duration-500 shadow-md transition-colors ${pathname === el[2] ? "bg-[#9DFBFA] text-secondary font-bold" : `${darkmode ? "bg-[#242727] text-[#EBEBEB]": "bg-white text-black"}`} rounded-xl gap-3 `}>

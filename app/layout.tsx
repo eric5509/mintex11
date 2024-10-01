@@ -10,7 +10,7 @@ const workSans = Work_Sans({ subsets: ['latin'] })
 
 
 export const metadata: Metadata = {
-  title: "Mintex - Leading Provider of Smart Contract Solutions for Businesses",
+  title: "TONPUMP - Leading Provider of Smart Contract Solutions for Businesses",
   description: "Unlock the power of secure and automated transactions with our cutting-edge smart contract solutions. Learn how we streamline business operations using blockchain technology",
 };
 
