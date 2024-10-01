@@ -6,7 +6,7 @@ export default function PostCard() {
   const darkmode = useAppSelector(store => store.darkmode.value)
   return (
     <div className={`flex shadow-md border-[#8996A9] border-2 duration-500 transition-colors p-3 rounded-xl gap-4 ${darkmode ? "bg-[#272727]" : "bg-white"}`}>
-      <Image height={0} width={0} src="Medium.png" className="h-[42px] w-[42px]" alt="" />
+      <Image height={0} width={0} src="loggg.png" className="h-[48px] w-[48px]" alt="" />
       <div className={`flex text-white flex-col gap-1`}>
         <div className="flex justify-between items-center">
           <p className="flex gap-1 text-13 items-center">
