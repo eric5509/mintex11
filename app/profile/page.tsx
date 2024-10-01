@@ -1,7 +1,9 @@
-import React from 'react'
+import Base from '@/components/Profile/Base'
 
 export default function page() {
   return (
-    <div>page</div>
+    <div>
+      <Base />
+    </div>
   )
 }

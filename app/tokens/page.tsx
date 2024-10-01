@@ -1,4 +1,4 @@
-import Base from "@/components/Profile/Base";
+import Base from "@/components/ScreenD/Base";
 
 export default function page() {
   return (

@@ -16,7 +16,7 @@ export default function Info({ img, title }: Props) {
       </div>
       <div className="flex gap-2">
         {[1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6, 6, 6].map((el, key) => (
-          <div className={`h-4 w-6 relative ${key === 6 && 'after:absolute after:h-10 after:w-[2px] after:bg-prim after:top-full after:right-0'} ${key < 7 ? "bg-prim " : "bg-white"}`}></div>
+          <div key={key} className={`h-4 w-6 relative ${key === 6 && 'after:absolute after:h-10 after:w-[2px] after:bg-prim after:top-full after:right-0'} ${key < 7 ? "bg-prim " : "bg-white"}`}></div>
         ))}
       </div>
       <div className="flex text-white items-center gap-2 ">

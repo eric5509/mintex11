@@ -28,8 +28,8 @@ export default function Backdrop() {
                     <div className="mt-5">
                         <p className="text-[#9DFBFA] mb-2 pl-2 font-semibold">Rainbow</p>
                         <div className="flex flex-col gap-1">
-                            {links1.map((link) => (
-                                <div className="flex p-2 rounded-xl text-white hover:text-[#22577A] duration-300 cursor-pointer hover:bg-[#9DFBFA] items-center gap-3">
+                            {links1.map((link, key) => (
+                                <div key={key} className="flex p-2 rounded-xl text-white hover:text-[#22577A] duration-300 cursor-pointer hover:bg-[#9DFBFA] items-center gap-3">
                                     <img src={link[1]} alt="" />
                                     <p className="font-bold ">{link[0]}</p>
                                 </div>
@@ -39,8 +39,8 @@ export default function Backdrop() {
                     <div className="mt-5">
                         <p className="text-[#9DFBFA] pl-2 mb-2 font-semibold">More</p>
                         <div className="flex flex-col gap-1">
-                            {links2.map((link) => (
-                                <div className="flex p-2 rounded-xl text-white hover:text-[#22577A] duration-300 cursor-pointer hover:bg-[#9DFBFA] items-center gap-3">
+                            {links2.map((link, key) => (
+                                <div key={key} className="flex p-2 rounded-xl text-white hover:text-[#22577A] duration-300 cursor-pointer hover:bg-[#9DFBFA] items-center gap-3">
                                     <img src={link[1]} alt="" />
                                     <p className="font-bold ">{link[0]}</p>
                                 </div>

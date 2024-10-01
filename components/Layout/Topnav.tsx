@@ -2,6 +2,7 @@
 
 import { toggleDarkmode } from "@/redux/reducers/darkmode"
 import { useAppDispatch, useAppSelector } from "@/redux/store/hook"
+import Link from "next/link"
 
 export default function Topnav() {
     const darkmode = useAppSelector(store => store.darkmode.value)
@@ -11,8 +12,10 @@ export default function Topnav() {
 
         <div className={`h-20 duration-500 transition-colors justify-between px-12 flex items-center w-full ${darkmode ? 'text-white shadow-2xl bg-[#210716] shadow-gray-950 ' : 'shadow-md shadow-gray-500 text-black'}`}>
             <div className="flex items-center gap-20">
-                {darkmode && <img src="/logo.svg" className="w-[179px] h-[29px]" alt="" />}
-                {!darkmode && <img src="/logoDark.svg" className="w-[179px] h-[29px]" alt="" />}
+                <Link href={'/'}>
+                    {darkmode && <img src="/logo.svg" className="w-[179px] h-[29px]" alt="" />}
+                    {!darkmode && <img src="/logoDark.svg" className="w-[179px] h-[29px]" alt="" />}
+                </Link>
                 <div className="transition-none">
                     <div className={`flex items-center duration-500 gap-5 ${darkmode ? "bg-[#D8FDFD0F]" : "bg-gray-300"}  px-5 py-3 rounded-full`}>
                         <img src="x.png" className="cursor-pointer duration-500 hover:scale-125 active:scale-100" alt="" />
@@ -28,7 +31,7 @@ export default function Topnav() {
             </div>
             <div className="flex items-center transform-none gap-7">
                 <div className="">
-                    <img src="toggler.png" onClick={() => dispatch(toggleDarkmode())} className="translate-x-9 cursor-pointer duration-300 active:scale-95" alt="" />
+                    <img src="toggler.png" className="translate-x-9 cursor-pointer duration-300 active:scale-95" alt="" />
                 </div>
                 <div className="flex items-center gap-2">
                     <img src="gem.png" alt="" />

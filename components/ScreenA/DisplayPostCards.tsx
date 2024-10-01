@@ -7,8 +7,10 @@ export default function DisplayPostCards() {
 
     return (
         <div className={`grid duration-300 ${type == "" ? "grid-cols-3" : "grid-cols-2"} gap-5`}>
-            {[1, 2, 3, 4, 5].map(() => (
-                <PostCard />
+            {[1, 2, 3, 4, 5].map((el, key) => (
+                <div key={key} className="">
+                    <PostCard />
+                </div>
             ))}
         </div>
     )

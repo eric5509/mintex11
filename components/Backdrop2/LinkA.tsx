@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
-import Input from "../Input";
-import Textarea from "../Textarea";
+import Input from "../General/Input";
+import Textarea from "../General/Textarea";
 
 export default function LinkA() {
   return (
