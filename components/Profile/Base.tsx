@@ -22,7 +22,6 @@ export default function Base() {
 
     return (
         <motion.div variants={variant} animate="animate" initial='initial' className="border-2 rounded-2xl border-[#862078]">
-            <img src="/SidebarIcons/earn.svg" alt="" />
             <Title title="Token" height="50px" parentPadding="10px" marginBottom="5px" paddingLeft="10px" />
             <FollowCard />
             <Title title="Details" height="50px" parentPadding="10px" marginTop="5px" paddingLeft="10px" />
