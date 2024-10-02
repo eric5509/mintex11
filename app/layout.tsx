@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <AppProvider>
           <Background>
-            <main className="max-w-[1600px] mx-auto flex w-full overflow-y-auto h-screen flex-col">
+            <main className=" mx-auto flex w-full overflow-y-auto h-screen flex-col">
               <Topnav />
               <Main children={children} />
             </main>

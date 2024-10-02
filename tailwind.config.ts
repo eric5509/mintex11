@@ -8,6 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        '3xl': '1800px',
+        '4xl': '2100px',
+        '5xl': '2400px',
+        '6xl': '2700px',
+        '7xl': '3000px',
+        '8xl': '3400px',
+      },
       colors: {
         mainDark: "#210716",
         mainLight: "white",
