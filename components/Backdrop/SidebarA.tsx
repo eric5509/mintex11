@@ -1,7 +1,12 @@
 'use client'
-import { useState } from "react"
+import { Dispatch, SetStateAction, useState } from "react"
 
-export default function SidebarA() {
+type Props ={
+    active: number
+    setActive: Dispatch<SetStateAction<number>>
+}
+
+export default function SidebarA({setActive, active}: Props) {
     const data1 = [
         ['Rainbow', 'rainbow.png'],
         ['Coinbase Wallet', 'coinbase.png'],
@@ -15,7 +20,6 @@ export default function SidebarA() {
         ['imWallet', 'imwallet.png'],
         ['Steakwallet', 'steak.png'],
     ]
-    const [active, setActive] = useState(0)
     return (
         <div className="flex-1 p-5 ">
             <div className="">
