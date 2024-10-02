@@ -1,7 +1,7 @@
 'use client '
+import { motion } from 'framer-motion'
 import { useAppSelector } from "@/redux/store/hook";
 import Screen1A from "./Screen1A";
-import { motion } from 'framer-motion'
 import Screen2A from "./Screen2A";
 import Screen3A from "./Screen3A";
 import Screen4A from "./Screen4A";
@@ -26,22 +26,22 @@ export default function BackdropA() {
                 <div className="w-[570px] h-full rounded-2xl flex flex-col">
                     <motion.div
                         transition={{ duration: 1 }}
-                        animate={{ opacity: active === 0 ? 1 : 0 }} className={`${active !== 0 && 'hidden flex-1 bg-red-500 h-full'}`}>
+                        animate={{ opacity: active === 0 ? 1 : 0 }} className={`flex-1 ${active !== 0 && 'hidden'}`}>
                         <Screen1A />
                     </motion.div>
                     <motion.div
                         transition={{ duration: 1 }}
-                        animate={{ opacity: active === 1 ? 1 : 0 }} className={`${active !== 1 && 'hidden flex-1 bg-red-500 h-full'}`}>
+                        animate={{ opacity: active === 1 ? 1 : 0 }} className={`flex-1 ${active !== 1 && 'hidden'}`}>
                         <Screen2A />
                     </motion.div>
                     <motion.div
                         transition={{ duration: 1 }}
-                        animate={{ opacity: active === 2 ? 1 : 0 }} className={`${active !== 2 && 'hidden flex-1 bg-red-500 h-full'}`}>
+                        animate={{ opacity: active === 2 ? 1 : 0 }} className={`flex-1 ${active !== 2 && 'hidden'}`}>
                         <Screen3A />
                     </motion.div>
                     <motion.div
                         transition={{ duration: 1 }}
-                        animate={{ opacity: active === 3 ? 1 : 0 }} className={`${active !== 3 && 'hidden flex-1 bg-red-500 h-full'}`}>
+                        animate={{ opacity: active === 3 ? 1 : 0 }} className={`flex-1 ${active !== 3 && 'hidden'}`}>
                         <Screen4A />
                     </motion.div>
                 </div>
