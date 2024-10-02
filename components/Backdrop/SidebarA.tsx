@@ -26,7 +26,7 @@ export default function SidebarA({setActive, active}: Props) {
                 <p className="pb-3 text-prim text-15">Rainbow</p>
                 <div className="flex flex-col gap-1">
                     {data1.map((el, key) => (
-                        <div onClick={() => setActive(key)} key={key} className={`flex active:scale-[.99] duration-300 ${active === key ? 'text-secondary bg-prim' : "bg-transparent hover:bg-[#3F3C3C99] text-white"} p-2 rounded-xl gap-3 cursor-pointer`}>
+                        <div onClick={() => setActive(key)} key={key} className={`flex active:scale-[.99] duration-300 ${active === key ? 'text-secondary bg-prim' : "bg-transparent hover:bg-[#3F3C3C99] text-white"} items-center p-2 rounded-xl gap-3 cursor-pointer`}>
                             <img src={el[1]} alt="" />
                             <p className="font-semibold">{el[0]}</p>
                         </div>
