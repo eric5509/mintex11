@@ -13,7 +13,7 @@ export default function BackdropB() {
     const backdrop = useAppSelector(store => store.backdrop.value)
     const [active, setActive] = useState(0)
     return (
-        <div className={`fixed w-full z-[500] bg-black/20 duration-300 overflow-hidden backdrop-blur-xl h-[calc(100vh-80px)] top-[80px] left-0 lg:grid hidden place-content-center ${backdrop === 2 ? "opacity-100 visible": "opacity-0 invisible" }`}>
+        <div className={`fixed w-full z-[500] bg-black/20 duration-500 overflow-hidden backdrop-blur-xl h-[calc(100vh-80px)] top-[80px] left-0 lg:grid hidden place-content-center ${backdrop === 2 ? "opacity-100 visible": "opacity-0 invisible" }`}>
             <div className="flex h-[600px] rounded-2xl bg-[#2D383E]">
                 <div className="border-r-2 flex flex-col rounded-2xl overflow-hidden rounded-r-none w-[290px]">
                     <div className="flex h-14 px-5 justify-between items-center text-prim">
