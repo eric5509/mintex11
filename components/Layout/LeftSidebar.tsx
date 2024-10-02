@@ -1,6 +1,7 @@
 'use client'
 import { IoMdHome } from "react-icons/io";
 import { BsFillGridFill } from "react-icons/bs";
+import { motion} from 'framer-motion'
 import { FaUserAlt } from "react-icons/fa";
 import { FaRegGem } from "react-icons/fa";
 import { useAppSelector } from "@/redux/store/hook"
