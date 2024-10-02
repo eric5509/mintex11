@@ -59,9 +59,40 @@ export default function RightSidebarContent() {
                     <Input marginBottom='20px' marginTop='20px' label='Order Price' text='SPACE' placeholder='58403' />
                     <Input label='Qty' text='TON' marginTop='10px' placeholder='58403' />
                     <Input label='Total' text='USD' marginTop='30px' placeholder='' />
+
+                    <div className="mt-6 w-full ">
+                        <div className="relative cursor-pointer">
+                            <div className="h-1 absolute w-full top-[5px] pointer-events-none right-0 flex justify-between">
+                                <div className="h-4 w-4 grid place-content-center">
+                                    <div className="h-[6px] w-[6px] bg-black rounded-full"></div>
+                                </div>
+                                <div className="h-4 w-4 grid place-content-center">
+                                    <div className="h-[6px] w-[6px] bg-black rounded-full"></div>
+                                </div>
+                                <div className="h-4 w-4 grid place-content-center">
+                                    <div className="h-[6px] w-[6px] bg-black rounded-full"></div>
+                                </div>
+                                <div className="h-4 w-4 grid place-content-center">
+                                    <div className="h-[6px] w-[6px] bg-black rounded-full"></div>
+                                </div>
+                                <div className="h-4 w-4 grid place-content-center">
+                                    <div className="h-[6px] w-[6px] bg-black rounded-full"></div>
+                                </div>
+                            </div>
+                            <input type="range" min="0" max="100" className='h-3 mt-2 bg-prim w-full' step="25" />
+                        </div>
+                        <div className="flex text-prim text-xs mt-2 justify-between">
+                            <p className='pl-2'>0</p>
+                            <p className='pl-2'>25</p>
+                            <p className='pl-2'>50</p>
+                            <p className='pl-2'>75</p>
+                            <p className='pl-2'>100</p>
+                        </div>
+                    </div>
                     <div className="flex mt-10 justify-center">
                         <button className={`px-[70px] font-semibold py-[14px] hover:scale-105 active:scale-100 duration-150 rounded-xl text-white ${activeMarket === 0 ? "bg-[#4db34d]" : "bg-[red]"}`}>{activeMarket === 0 ? 'Buy' : 'Sell'}</button>
                     </div>
+
                 </div>
             </motion.div>
         </>
