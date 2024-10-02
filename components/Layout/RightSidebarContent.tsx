@@ -15,6 +15,7 @@ export default function RightSidebarContent() {
     const darkmode = useAppSelector(store => store.darkmode.value)
     const type = useAppSelector(store => store.sidebar.type)
     const [active, setActive] = useState(0)
+    const [activeMarket, setActiveMarket] = useState(0)
 
 
 
@@ -42,7 +43,7 @@ export default function RightSidebarContent() {
                 className={`${type != 'market' && "hidden"} border-2 h-full flex-col flex border-[#862078] rounded-2xl`}>
                 <Title parentPadding='10px' title='Trade' height='50px' />
                 <div className="bg-[#272727] flex-1 rounded-xl p-2">
-                    <BuySell />
+                    <BuySell active={activeMarket} setActive={setActiveMarket} />
                     <div className="flex justify-between items-center mt-4">
                         <Links active={active} setActive={setActive} noRadius={true} data={['Limit', 'Market']} fontSize='11px' />
                         <div className="flex flex-col items-end">
@@ -58,7 +59,9 @@ export default function RightSidebarContent() {
                     <Input marginBottom='20px' marginTop='20px' label='Order Price' text='SPACE' placeholder='58403' />
                     <Input label='Qty' text='TON' marginTop='10px' placeholder='58403' />
                     <Input label='Total' text='USD' marginTop='30px' placeholder='' />
-                    <Button paddingX='80px' marginTop='30px' title='Buy' />
+                    <div className="flex mt-10 justify-center">
+                        <button className={`px-[70px] font-semibold py-[10px] hover:scale-105 active:scale-100 duration-150 rounded-xl text-white ${activeMarket === 0 ? "bg-[#4db34d]" : "bg-[red]"}`}>{activeMarket === 0 ? 'Buy' : 'Sell'}</button>
+                    </div>
                 </div>
             </motion.div>
         </>
