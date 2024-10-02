@@ -60,7 +60,7 @@ export default function RightSidebarContent() {
                     <Input label='Qty' text='TON' marginTop='10px' placeholder='58403' />
                     <Input label='Total' text='USD' marginTop='30px' placeholder='' />
                     <div className="flex mt-10 justify-center">
-                        <button className={`px-[70px] font-semibold py-[10px] hover:scale-105 active:scale-100 duration-150 rounded-xl text-white ${activeMarket === 0 ? "bg-[#4db34d]" : "bg-[red]"}`}>{activeMarket === 0 ? 'Buy' : 'Sell'}</button>
+                        <button className={`px-[70px] font-semibold py-[14px] hover:scale-105 active:scale-100 duration-150 rounded-xl text-white ${activeMarket === 0 ? "bg-[#4db34d]" : "bg-[red]"}`}>{activeMarket === 0 ? 'Buy' : 'Sell'}</button>
                     </div>
                 </div>
             </motion.div>
