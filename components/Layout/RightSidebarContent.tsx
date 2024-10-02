@@ -20,7 +20,7 @@ export default function RightSidebarContent() {
 
 
     return (
-        <>
+        <div className='h-full overflow-y-auto'>
             <motion.div
                 animate={{ opacity: type === 'main' ? 1 : 0 }}
                 transition={{ duration: 1 }}
@@ -28,9 +28,9 @@ export default function RightSidebarContent() {
                 <div className="p-2">
                     <Title title="King of Coin" height="50px" fontSize="18px" paddingLeft="5px" />
                 </div>
-                <div className={`p-3 ${darkmode ? "bg-[#272727]" : 'bg-white'} h-fit duration-500 transition-colors rounded-2xl mt-3`}>
+                <div className={`p-3 ${darkmode ? "bg-[#272727d]" : 'bg-whited'} h-fit duration-500 transition-colors rounded-2xl mt-3`}>
                     <KingOfCoin />
-                    <div className=" mb-4 mt-3 flex justify-between">
+                    <div className=" mb-4 mt-3 flex overflow-y-auto justify-between">
                         <Title title="Updates" paddingLeft="5px" height="50px" />
                         <Links identifier='sidebar' active={active} setActive={setActive} paddingInline="12px" data={['All', 'Creation', 'Transaction']} fontSize="11px" />
                     </div>
@@ -95,6 +95,7 @@ export default function RightSidebarContent() {
 
                 </div>
             </motion.div>
-        </>
+        </div>
+        // <div className="h-full border-2 rounded-2xl"></div>
     )
 }
