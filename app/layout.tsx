@@ -28,7 +28,7 @@ export default function RootLayout({
               <Topnav />
             </div>
             <div className="h-[calc(100vh-80px)] p-2">
-              <div className="h-full w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-3">
+              <div className="h-full w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-2">
                 <div className="hidden lg:block h-full p-2.5 rounded-2xl w-[275px] 2xl:w-[300px] border-2 border-purplee overflow-y-auto">
                   <div className="overflow-y-auto rounded-lg h-full">
                     <LeftSidebar />
