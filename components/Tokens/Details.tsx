@@ -1,4 +1,6 @@
-import Info from "../Tokens/Info";
+import Chart from "./Chart";
+import CommentCard from "./CommentCard";
+import Info from "./Info";
 
 export default function Details() {
     return (

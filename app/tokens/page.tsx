@@ -1,9 +1,5 @@
-import Base from "@/components/ScreenD/Base";
+import Base from "@/components/Tokens/Base";
 
 export default function page() {
-  return (
-    <div>
-        <Base />
-    </div>
-  )
+  return <Base />;
 }

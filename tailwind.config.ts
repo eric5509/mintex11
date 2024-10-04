@@ -26,7 +26,8 @@ const config: Config = {
         mainLight: "white",
         secondary: "#22577A",
         prim: "#9DFBFA",
-        subText: "#5090A0"
+        subText: "#5090A0",
+        purplee: "#862078"
       },
      fontSize:{
       '9': '9px',
@@ -38,6 +39,9 @@ const config: Config = {
      },
       height:{
         "13": "50px"
+      },
+      padding:{
+        2.5: "10px"
       }
     },
   },

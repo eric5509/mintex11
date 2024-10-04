@@ -21,7 +21,7 @@ export default function Topnav() {
 
     return (
         <div className="">
-            <div onClick={close} className={`h-20 border-b-2 border-[#862078] duration-500 z-[50000000] transition-colors justify-between px-6 xl:px-12 flex items-center w-full ${darkmode ? 'text-white shadow-2xl bg-[#210716] shadow-gray-950 ' : 'shadow-md  text-black'}`}>
+            <div onClick={close} className={`h-20 border-b-2 border-[#862078] duration-500 z-[50000000] transition-colors justify-between px-3 xl:px-5 flex items-center w-full ${darkmode ? 'text-white shadow-2xl bg-[#210716] shadow-gray-950 ' : 'shadow-md  text-black'}`}>
                 <img src="/logo.svg" className="w-[179px] lg:hidden h-[29px]" alt="" />
                 <div className="hidden lg:flex items-center gap-5 xl:gap-16">
                     <Link href={'/'}>
@@ -29,28 +29,28 @@ export default function Topnav() {
                         {!darkmode && <img src="/logoDark.svg" className="w-[179px] h-[29px]" alt="" />}
                     </Link>
                     <div className="hidden lg:block transition-none">
-                        <div className={`flex items-center duration-500 gap-5 ${darkmode ? "bg-[#D8FDFD0F]" : "bg-gray-300"}  px-5 py-3 rounded-full`}>
+                        <div className={`flex items-center duration-500 gap-5 ${darkmode ? "bg-[#D8FDFD0F]" : "bg-gray-300"} duration-300 border overflow-hidden border-transparent hover:border-prim cursor-pointer px-5 h-[45px] rounded-full`}>
                             <img src="x.png" className="cursor-pointer duration-500 hover:scale-125 active:scale-100" alt="" />
                             <img src="telegram.png" className="cursor-pointer duration-500 hover:scale-125 active:scale-100" alt="" />
                             <img src="discord.png" className="cursor-pointer duration-500 hover:scale-125 active:scale-100" alt="" />
                         </div>
                     </div>
                 </div>
-                <div className={`hidden lg:block w-[235px] xl:w-[300px] h-[50px] shadow duration-500  rounded-full relative ${darkmode ? "bg-white/10" : "bg-gray-200"}`}>
-                    <input type="text" placeholder='Try searching "Trending"' className={`h-full placeholder:font-semibold  w-full bg-transparent outline-none pr-8 pl-5 ${darkmode ? "placeholder:text-[#C4FDFC]" : "placeholder:text-gray-800"}`} />
+                <div className={`hidden lg:block hover:border-prim border border-transparent w-[235px] xl:w-[300px] h-[45px] shadow duration-500  rounded-full relative ${darkmode ? "bg-white/10" : "bg-gray-200"}`}>
+                    <input type="text" placeholder='Try searching "Trending"' className={`h-full placeholder:font-normal  w-full bg-transparent outline-none pr-8 pl-5 ${darkmode ? "placeholder:text-[#C4FDFC]" : "placeholder:text-gray-800"}`} />
                     {!darkmode && <img src="darksearch.png" className="absolute top-1/2 -translate-y-1/2 right-4" alt="" />}
                     {darkmode && <img src="search.png" className="absolute top-1/2 -translate-y-1/2 right-4" alt="" />}
                 </div>
                 <div className="hidden lg:flex items-center transform-none gap-5 xl:gap-7">
                     <div className="">
-                        <img src="toggler.png" className="translate-x-5 xl:translate-x-9 cursor-pointer duration-300 active:scale-95" alt="" />
+                        <img src="toggler.png" className="translate-x-5 xl:translate-x-9 cursor-pointer duration-300 scale-75 active:scale-50" alt="" />
                     </div>
                     <div className="flex items-center gap-2">
                         <img src="gem.png" alt="" />
-                        <p className="font-bold">0.0200</p>
+                        <p className="font-">0.0200</p>
                     </div>
                     <div onClick={() => dispatch(openBackdrop(1))} className="transition-none">
-                        <p className="px-6 xl:px-10 py-3 rounded-lg cursor-pointer border-2 hover:scale-105 duration-300 active:scale-100 border-[#9DFBFA] font-semibold">Create Token</p>
+                        <p className="px-5 py-2.5 rounded-xl cursor-pointer text-sm border hover:scale-105 duration-300 active:scale-100 border-[#9DFBFA] font-">Create Token</p>
                     </div>
                 </div>
                 <FaBars className="lg:hidden text-3xl text-prim" />

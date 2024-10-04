@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Work_Sans } from 'next/font/google'
+import { Work_Sans } from "next/font/google";
 import Topnav from "@/components/Layout/Topnav";
 import AppProvider from "@/redux/provider/AppProvider";
-import Background from "./background";
-import Main from "@/components/Layout/Main";
+import LeftSidebar from "@/components/Layout/LeftSidebar";
 
-const workSans = Work_Sans({ subsets: ['latin'] })
-
+const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TONPUMP - Leading Provider of Smart Contract Solutions for Businesses",
-  description: "Unlock the power of secure and automated transactions with our cutting-edge smart contract solutions. Learn how we streamline business operations using blockchain technology",
+  title:
+    "TONPUMP - Leading Provider of Smart Contract Solutions for Businesses",
+  description:
+    "Unlock the power of secure and automated transactions with our cutting-edge smart contract solutions. Learn how we streamline business operations using blockchain technology",
 };
 
 export default function RootLayout({
@@ -21,16 +21,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${workSans.className} `}
-      >
+      <body className={`${workSans.className} `}>
         <AppProvider>
-          <Background>
-            <main className=" mx-auto flex w-full overflow-y-auto h-screen flex-col">
+          <div className="h-screen ">
+            <div className="h-20 bg-green-500">
               <Topnav />
-              <Main children={children} />
-            </main>
-          </Background>
+            </div>
+            <div className="h-[calc(100vh-80px)] p-3">
+              <div className="h-full w-full grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-3">
+                <div className="hidden lg:block h-full p-2.5 rounded-2xl w-[275px] border-2 border-purplee overflow-y-auto">
+                  <div className="overflow-y-auto rounded-lg h-full">
+                    <LeftSidebar />
+                  </div>
+                </div>
+                <div className="rounded-2xl overflow-y-auto">{children}</div>
+              </div>
+            </div>
+          </div>
         </AppProvider>
       </body>
     </html>

@@ -13,9 +13,9 @@ export default function HoldersTable() {
             <div key={index} className={`h-full flex items-center text-white ${index === 0 && 'pl-6'}`}>{el}</div>
         ))}
     </div>
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col rounded-b-2xl overflow-hidden w-full">
         {data.map((ell, key) => (
-            <div key={key} className={`grid h-12 border-b-2 relative text-xs border-[#15181A] bg-[#292F32] grid-cols-[80px_1fr_1fr_2.5fr] gap-5 `}>
+            <div key={key} className={`grid h-12 border-b-2 relative text-xs ${key === (data.length - 1) ? "border-transparent" :" border-[#15181A]"} bg-[#292F32] grid-cols-[80px_1fr_1fr_2.5fr] gap-5 `}>
                 {[key+1, ...ell].map((elem, keyy) => (
                     <>
                         {keyy === 1 ?
