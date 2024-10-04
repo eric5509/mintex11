@@ -26,7 +26,7 @@ export default function Base() {
       initial="initial"
       className="h-full gap-3 "
     >
-      <div className="h-full grid gap-3 grid-cols-1 xl:grid-cols-[1fr_300px] 2xl:grid-cols-[1fr_346px] overflow-y-auto">
+      <div className="h-full grid gap-2 grid-cols-1 xl:grid-cols-[1fr_300px] 2xl:grid-cols-[1fr_346px] overflow-y-auto">
         <div
           className={`border-2 p-2.5 rounded-2xl border-purplee overflow-y-auto min-h-full`}
         >
