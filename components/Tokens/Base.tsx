@@ -33,7 +33,7 @@ export default function Base() {
       variants={variant}
       animate="animate"
       initial="initial"
-      className=" rounded-2xl grid gap-3 h-full overflow-y-auto grid-cols-1 xl:grid-cols-[1fr_300px] 2xl:grid-cols-[1fr_346px]"
+      className=" rounded-2xl grid gap-2 h-full overflow-y-auto grid-cols-1 xl:grid-cols-[1fr_300px] 2xl:grid-cols-[1fr_346px]"
     >
       <div className="border-[#862078] rounded-2xl p-2 border-2 overflow-y-auto h-full">
         <div className="h-full overflow-y-auto rounded-lg">
