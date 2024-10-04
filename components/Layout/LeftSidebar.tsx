@@ -23,7 +23,7 @@ export default function LeftSidebar() {
     ["Earn", "gem1.png", "/earn", <FaRegGem size={17} />],
   ];
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col h-full justify-between">
       <div className="flex flex-col gap-2">
         {links.map((el) => (
           <Link href={`${el[2]}`}
