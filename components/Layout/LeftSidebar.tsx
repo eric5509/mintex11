@@ -23,7 +23,7 @@ export default function LeftSidebar() {
     ["Earn", "gem1.png", "/earn", <FaRegGem size={17} />],
   ];
   return (
-    <div className="">
+    <div className="flex flex-col justify-between">
       <div className="flex flex-col gap-2">
         {links.map((el) => (
           <Link href={`${el[2]}`}
@@ -54,6 +54,8 @@ export default function LeftSidebar() {
           </Link>
         ))}
       </div>
+      <div>
+      
       <div className="grid mb-5 mt-3 place-content-center">
         <img src="cuate.png" className="" alt="" />
       </div>
@@ -84,6 +86,7 @@ export default function LeftSidebar() {
             alt=""
           />
         </div>
+      </div>
       </div>
     </div>
   );
